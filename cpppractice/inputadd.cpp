@@ -14,9 +14,8 @@ int main(){
     cin >> iteration;
 
     for (int i = 1; i <= iteration; i++){
-        cout << "Enter a number: ";
-        cin >> num;     
-        sum += num;
+        sum += i;
+        cout << i << endl;
     }
 
     cout << "The sum of the numbers is: " << sum << endl;
