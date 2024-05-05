@@ -1,25 +1,25 @@
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
  
-// #include <iomanip>
-// using std::setw;
+#include <iomanip>
+using std::setw;
  
-// int main () {
+int main () {
 
-//    int n[ 5 ] = {54, 3, 4, 9, 7};
+   int n[ 5 ] = {54, 3, 4, 9, 7};
 
-//    for(int i = 0; i < 5; i++){
-//        std::cout << n[i] << "\n";
-//    }
+   for(int i = 0; i < 5; i++){
+       std::cout << n[i] << "\n";
+   }
    
-//    return 0;
-// }
+   return 0;
+}
 
 // //NOT YET CONVERTED TO CPP |SORTING ARRAYS|
 // #include <iostream>
 
 // #include <iomanip>
-// using std::setw;
+// using std::setw;         
 
 // void cout (int arr[], int l)
 // {

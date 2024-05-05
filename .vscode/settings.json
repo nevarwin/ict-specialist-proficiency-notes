@@ -71,7 +71,8 @@
     "memory_resource": "cpp",
     "numeric": "cpp",
     "random": "cpp",
-    "numbers": "cpp"
+    "numbers": "cpp",
+    "fstream": "cpp"
   },
   "C_Cpp.default.compilerPath": "C:\\msys64\\ucrt64\\bin\\g++.exe"
 }

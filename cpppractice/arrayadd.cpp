@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 int main() {
     int marks[5];
@@ -6,22 +7,22 @@ int main() {
 	int sum = 0;
 	int average;
 
-	std::cout << "enter: ";
-    std::cin >> n;
+	cout << "enter: ";
+    cin >> n;
 
 	if (n > 5){
-		std::cout << "must not greater than 5";
+		cout << "must not greater than 5";
 		return 0;
 	}
 
 	for (int i = 0; i < n; i++){
-        std::cin >> marks[i];
+        cin >> marks[i];
 
 		sum += marks[i];
 	}
 
 	average = sum / n;
-	std::cout << "average: " << average;
+	cout << "average: " << average;
 
 	return 0;
 }
