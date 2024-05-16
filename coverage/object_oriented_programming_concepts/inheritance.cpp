@@ -14,7 +14,7 @@ class ChildClass : public ParentClass{
 public: 
     void childFunction(){
         cout << "This is a child class" << endl;
-        cout << parentNum;
+        cout << parentNum << endl;;
     }
 };
 
@@ -25,6 +25,7 @@ int main(){
 
     childObj.parentNum = 10;
     childObj.childFunction();
+    parentObj.parentFunction();
 
 
     return 0;
