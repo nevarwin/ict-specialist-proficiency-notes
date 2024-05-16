@@ -18,7 +18,7 @@ int main(){
     cout << "hour is: " << hour << endl;
 
 
-    if(hour > 23 || minutes > 59 || hour < 0 || minutes < 0){
+    if(hour > 23 || minutes > 60 || hour < 0 || minutes < 0){
         cout << "Invalid time format";
     } else {
         cout << "12hour format is: ";

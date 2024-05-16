@@ -1,44 +1,36 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-    int row, space;
+int main() {
+    int n;
+    cout << "Enter the number of rows for half the diamond: ";
+    cin >> n;
 
-    cout << "Enter number of rows (odd only): ";
-    cin >> row;
-
-    if(row & 2 == 0){
-        cout << "The number of rows should be odd\n";
-        return 1;
-    }
-
-    space = row  / 2;
-
-    for (int i = 1; i <= row; i += 2){
-        for (int j = 1; j <= space; j++){
-            cout << "_";
+    // Print the upper half of the diamond including the middle row
+    for (int i = 1; i <= n; ++i) {
+        // Print spaces
+        for (int j = i; j < n; ++j) {
+            cout << " ";
         }
-
-        for (int k = 1; k <= i; k++){
+        // Print stars
+        for (int j = 1; j <= 2 * i - 1; ++j) {
             cout << "*";
         }
-
         cout << endl;
-        space--;
     }
 
-    space = 1;
-
-    for (int i = row - 2 ; i >= 1 ; i -= 2){
-        for (int j = 1; j <= space; j++){
-            cout << "_";
+    // Print the lower half of the diamond
+    for (int i = n - 1; i >= 1; --i) {
+        // Print spaces
+        for (int j = n; j > i; --j) {
+            cout << " ";
         }
-
-        for (int k = 1; k <= i; k++){
+        // Print stars
+        for (int j = 1; j <= 2 * i - 1; ++j) {
             cout << "*";
         }
-
         cout << endl;
-        space++;
     }
+
+    return 0;
 }
